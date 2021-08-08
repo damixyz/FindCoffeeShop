@@ -24,7 +24,7 @@ ext {
     mockito_kotlin_version = "2.2.0"
     coroutines_version = "1.5.1"
     retrofit_version = "2.9.0"
-    okhttp3_version = "5.0.0-alpha.2"
+    okhttp3_version = "4.9.1"
     android_unit_version = "1.1.2"
     espresso_version = "3.3.0"
     timber_version = "4.7.1"
