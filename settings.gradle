@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 rootProject.name = "FindCoffee"
 include ':app'
 include ':domain'
+include ':usecases'

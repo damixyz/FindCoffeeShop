@@ -16,3 +16,20 @@ buildscript {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    // App dependencies
+    dagger_version = '2.33'
+    junit_version = "4.13.2"
+    mockito_kotlin_version = "2.2.0"
+    coroutines_version = "1.5.1"
+    retrofit_version = "2.9.0"
+    okhttp3_version = "5.0.0-alpha.2"
+    android_unit_version = "1.1.2"
+    espresso_version = "3.3.0"
+    timber_version = "4.7.1"
+    lifecycle_version = "2.3.1"
+    annotation_version = "1.2.0"
+    recyclerview_version = "1.2.1"
+    glide_version = "4.11.0"
+}
