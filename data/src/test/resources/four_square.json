@@ -1,0 +1,822 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "611134f33ef0a359ecf1f9df"
+  },
+  "response": {
+    "suggestedFilters": {
+      "header": "Tap to show:",
+      "filters": [
+        {
+          "name": "Open now",
+          "key": "openNow"
+        }
+      ]
+    },
+    "suggestedRadius": 7817,
+    "headerLocation": "Current map view",
+    "headerFullLocation": "Current map view",
+    "headerLocationGranularity": "unknown",
+    "query": "coffee",
+    "totalResults": 38,
+    "suggestedBounds": {
+      "ne": {
+        "lat": 51.284942028375646,
+        "lng": 1.082373972012797
+      },
+      "sw": {
+        "lat": 51.27742313555989,
+        "lng": 1.0743348973806217
+      }
+    },
+    "groups": [
+      {
+        "type": "Recommended Places",
+        "name": "recommended",
+        "items": [
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4cb08643aef16dcbe974b154",
+              "name": "The Goods Shed Café & Restaurant",
+              "contact": {},
+              "location": {
+                "address": "Station Rd",
+                "lat": 51.284600260520385,
+                "lng": 1.0762610782165143,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.284600260520385,
+                    "lng": 1.0762610782165143
+                  }
+                ],
+                "distance": 2118,
+                "postalCode": "CT2 8AN",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "Station Rd",
+                  "Canterbury",
+                  "Kent",
+                  "CT2 8AN",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4cb08643aef16dcbe974b154-0"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "525aa2c811d2975bc4760772",
+              "name": "Kitch",
+              "contact": {},
+              "location": {
+                "address": "4 St Peter's St",
+                "lat": 51.28015936368952,
+                "lng": 1.0781743274176583,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.28015936368952,
+                    "lng": 1.0781743274176583
+                  }
+                ],
+                "distance": 2440,
+                "postalCode": "CT1 2AT",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "4 St Peter's St",
+                  "Canterbury",
+                  "Kent",
+                  "CT1 2AT",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-525aa2c811d2975bc4760772-1"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4fc8b489e4b00f559926d98e",
+              "name": "Chocolate Cafe",
+              "contact": {},
+              "location": {
+                "address": "1 Guildhall St.",
+                "lat": 51.279911067726225,
+                "lng": 1.0806316876310738,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.279911067726225,
+                    "lng": 1.0806316876310738
+                  }
+                ],
+                "distance": 2604,
+                "postalCode": "CT1 2JQ",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "1 Guildhall St.",
+                  "Canterbury",
+                  "Kent",
+                  "CT1 2JQ",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4fc8b489e4b00f559926d98e-2"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4be36a92fe2995218b94966c",
+              "name": "Tiny Tim's Tearoom",
+              "contact": {},
+              "location": {
+                "address": "34 St Margaret's Street",
+                "lat": 51.277966230775164,
+                "lng": 1.0795985660709646,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.277966230775164,
+                    "lng": 1.0795985660709646
+                  }
+                ],
+                "distance": 2650,
+                "postalCode": "CT1 2TG",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "34 St Margaret's Street",
+                  "Canterbury",
+                  "Kent",
+                  "CT1 2TG",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1dc931735",
+                  "name": "Tea Room",
+                  "pluralName": "Tea Rooms",
+                  "shortName": "Tea Room",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/tearoom_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4be36a92fe2995218b94966c-3"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4cfa1136c671721e073dbb18",
+              "name": "The Refectory Kitchen",
+              "contact": {},
+              "location": {
+                "address": "16 St Dunstan’s St",
+                "lat": 51.282070001924495,
+                "lng": 1.0747003098639025,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.282070001924495,
+                    "lng": 1.0747003098639025
+                  }
+                ],
+                "distance": 2127,
+                "postalCode": "CT2 8AF",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "16 St Dunstan’s St",
+                  "Canterbury",
+                  "Kent",
+                  "CT2 8AF",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4cfa1136c671721e073dbb18-4"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4bee71f33686c9b68684246e",
+              "name": "Boho",
+              "contact": {},
+              "location": {
+                "address": "27 High St",
+                "lat": 51.279842476169584,
+                "lng": 1.0787418053427915,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.279842476169584,
+                    "lng": 1.0787418053427915
+                  }
+                ],
+                "distance": 2492,
+                "postalCode": "CT1 2AZ",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "27 High St",
+                  "Canterbury",
+                  "Kent",
+                  "CT1 2AZ",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d16d941735",
+                  "name": "Café",
+                  "pluralName": "Cafés",
+                  "shortName": "Café",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4bee71f33686c9b68684246e-5"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "54314930498e6631c11cff0b",
+              "name": "Waterlane Coffee",
+              "contact": {},
+              "location": {
+                "address": "Water Ln",
+                "lat": 51.27849695195665,
+                "lng": 1.0771845724206024,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.27849695195665,
+                    "lng": 1.0771845724206024
+                  }
+                ],
+                "distance": 2477,
+                "postalCode": "CT1 2NQ",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "Water Ln",
+                  "Canterbury",
+                  "Kent",
+                  "CT1 2NQ",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-54314930498e6631c11cff0b-6"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "52a5c5ae11d293427cfbe5fa",
+              "name": "Burgate Coffee House",
+              "contact": {},
+              "location": {
+                "address": "43 Burgate",
+                "lat": 51.27910238523383,
+                "lng": 1.081542999594821,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.27910238523383,
+                    "lng": 1.081542999594821
+                  }
+                ],
+                "distance": 2703,
+                "postalCode": "CT1 2HW",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "43 Burgate",
+                  "Canterbury",
+                  "Kent",
+                  "CT1 2HW",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-52a5c5ae11d293427cfbe5fa-7"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "4c05484458dad13a97704897",
+              "name": "Starbucks",
+              "contact": {},
+              "location": {
+                "address": "13 St Georges Street",
+                "lat": 51.278033,
+                "lng": 1.081897,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.278033,
+                    "lng": 1.081897
+                  }
+                ],
+                "distance": 2783,
+                "postalCode": "CT1 2JT",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "13 St Georges Street",
+                  "Canterbury",
+                  "Kent",
+                  "CT1 2JT",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": true,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-4c05484458dad13a97704897-8"
+          },
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "5166bb03e4b0008b21aca79b",
+              "name": "Lost Sheep Coffee",
+              "contact": {},
+              "location": {
+                "address": "Lamb Sq",
+                "crossStreet": "St George's Ln",
+                "lat": 51.27776490341516,
+                "lng": 1.0820085595295164,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 51.27776490341516,
+                    "lng": 1.0820085595295164
+                  }
+                ],
+                "distance": 2805,
+                "postalCode": "CT1 2SY",
+                "cc": "GB",
+                "city": "Canterbury",
+                "state": "Kent",
+                "country": "United Kingdom",
+                "formattedAddress": [
+                  "Lamb Sq (St George's Ln)",
+                  "Canterbury",
+                  "Kent",
+                  "CT1 2SY",
+                  "United Kingdom"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "4bf58dd8d48988d1e0931735",
+                  "name": "Coffee Shop",
+                  "pluralName": "Coffee Shops",
+                  "shortName": "Coffee Shop",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-5166bb03e4b0008b21aca79b-9"
+          }
+        ]
+      }
+    ]
+  }
+}
