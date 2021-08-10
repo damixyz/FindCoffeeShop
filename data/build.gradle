@@ -18,6 +18,7 @@ dependencies {
 
     // OkHttp interceptor
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp3_version"
+    testImplementation "com.squareup.okhttp3:mockwebserver:$rootProject.okhttp3_version"
 
     // Dagger
     implementation "com.google.dagger:dagger:$rootProject.dagger_version"
@@ -30,4 +31,5 @@ dependencies {
 
     // Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines_version"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$rootProject.coroutines_version"
 }
