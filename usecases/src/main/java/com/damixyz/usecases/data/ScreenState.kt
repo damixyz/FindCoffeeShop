@@ -9,4 +9,5 @@ sealed class ScreenState {
 
 sealed class HomeScreen : ScreenState() {
     data class Content(val payload: List<CoffeeShopInfo>) : HomeScreen()
+    object LaunchVenues: HomeScreen()
 }
