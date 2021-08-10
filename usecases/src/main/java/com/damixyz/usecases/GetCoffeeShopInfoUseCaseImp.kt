@@ -1,8 +1,8 @@
 package com.damixyz.usecases
 
 import com.damixyz.data.repositories.FourSquareRepository
-import com.damixyz.usecases.data.HomeScreen
 import com.damixyz.usecases.data.ScreenState
+import com.damixyz.usecases.data.VenuesScreen
 import javax.inject.Inject
 
 class GetCoffeeShopInfoUseCaseImp @Inject constructor(
@@ -12,7 +12,7 @@ class GetCoffeeShopInfoUseCaseImp @Inject constructor(
         return try {
             val list = repository.getCoffeeVenuesInfo()
             if (list.isNotEmpty()) {
-                HomeScreen.Content(payload = list)
+                VenuesScreen.Content(payload = list)
             } else {
                 ScreenState.Empty
             }

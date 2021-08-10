@@ -2,8 +2,8 @@ package com.damixyz.usecases
 
 import com.damixyz.data.repositories.FourSquareRepository
 import com.damixyz.domain.CoffeeShopInfo
-import com.damixyz.usecases.data.HomeScreen
 import com.damixyz.usecases.data.ScreenState
+import com.damixyz.usecases.data.VenuesScreen
 import com.nhaarman.mockitokotlin2.given
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
@@ -57,7 +57,7 @@ class GetCoffeeShopInfoUseCaseImpTest {
             given(fourSquareRepository.getCoffeeVenuesInfo())
                 .willReturn(list)
 
-            val actual = getCoffeeShopInfoUseCase.execute() as HomeScreen.Content
+            val actual = getCoffeeShopInfoUseCase.execute() as VenuesScreen.Content
             assertEquals(list, actual.payload)
         }
     }
