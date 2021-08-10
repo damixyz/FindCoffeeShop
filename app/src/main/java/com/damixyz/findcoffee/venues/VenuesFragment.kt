@@ -25,10 +25,6 @@ class VenuesFragment : Fragment() {
     ): View {
         _binding = FragmentVenuesBinding.inflate(inflater, container, false)
 
-
-
-
-
         venuesViewModel.getVenues()
         return binding.root
     }
