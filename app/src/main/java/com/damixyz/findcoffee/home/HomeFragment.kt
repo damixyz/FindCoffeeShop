@@ -13,17 +13,25 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.damixyz.findcoffee.R
 import com.damixyz.findcoffee.databinding.FragmentHomeBinding
 import com.damixyz.usecases.data.HomeScreen
 import com.damixyz.usecases.data.ScreenState
+import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
 
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
+
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
 
     private val homeViewModel: HomeViewModel by viewModels()
     private val requestPermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
             if (isGranted) {
                 homeViewModel.launchVenuesFragment()
+                Timber.d("✅ is Granted")
             } else {
                 Toast.makeText(activity, "Location Permission is Required.", Toast.LENGTH_SHORT)
                     .show()
@@ -34,16 +42,19 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        homeViewModel.start()
         homeViewModel.homeScreenState.observe(requireActivity(), { screenState ->
             when (screenState) {
                 is HomeScreen.LaunchVenues -> launchVenueFragment()
                 is HomeScreen.Content -> processContent(screenState)
-                is ScreenState.Empty -> processEmpty(screenState)
+                is ScreenState.Empty -> processEmpty()
                 is ScreenState.Error -> processError(screenState)
             }
         })
+
+
 
         binding.fab.setOnClickListener {
             when {
@@ -61,24 +72,32 @@ class HomeFragment : Fragment() {
             }
         }
 
+        homeViewModel.getSavedVenues()
+
         return binding.root
     }
 
     private fun launchVenueFragment() {
         val action = HomeFragmentDirections.actionHomeFragmentToVenuesFragment()
+        findNavController().navigateUp()
         findNavController().navigate(action)
     }
 
     private fun processContent(screenState: HomeScreen.Content) {
-        Log.d("TAG", "${screenState.payload}")
+        Timber.d("${screenState.payload}")
     }
 
-    private fun processEmpty(screenState: ScreenState.Empty) {
+    private fun processEmpty() {
         Toast.makeText(context, "No Data", Toast.LENGTH_LONG).show()
     }
 
     private fun processError(screenState: ScreenState.Error) {
-        Log.e("TAG", "${screenState.errorMessages}")
+        Timber.e(screenState.errorMessages)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
 }

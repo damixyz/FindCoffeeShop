@@ -2,8 +2,9 @@ package com.damixyz.data.source
 
 import com.damixyz.data.api.FourSquareApi
 import com.damixyz.data.data.FourSquareResponse
+import javax.inject.Inject
 
-class RemoteDataSource(private val service: FourSquareApi) : DataSource {
+class RemoteDataSource @Inject constructor(private val service: FourSquareApi) : DataSource {
     override suspend fun getCoffeeVenuesInfo(): FourSquareResponse {
         return service.getCoffeeVenuesInfo(
             v = 20180323,

@@ -2,8 +2,9 @@ package com.damixyz.data.mapper
 
 import com.damixyz.data.data.Item
 import com.damixyz.domain.CoffeeShopInfo
+import javax.inject.Inject
 
-class CoffeeVenueMapper : Mapper<Item, CoffeeShopInfo> {
+class CoffeeVenueMapper @Inject constructor() : Mapper<Item, CoffeeShopInfo> {
     override fun map(item: Item): CoffeeShopInfo {
         return with(item) {
             CoffeeShopInfo(
