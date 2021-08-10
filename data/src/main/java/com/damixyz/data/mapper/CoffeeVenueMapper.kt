@@ -1,8 +1,6 @@
 package com.damixyz.data.mapper
 
-import com.damixyz.data.data.FourSquareResponse
 import com.damixyz.data.data.Item
-import com.damixyz.data.data.Venue
 import com.damixyz.domain.CoffeeShopInfo
 
 class CoffeeVenueMapper : Mapper<Item, CoffeeShopInfo> {
