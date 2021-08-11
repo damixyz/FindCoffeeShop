@@ -73,6 +73,7 @@ class VenuesViewModel @Inject constructor(
     }
 
     private fun showLoading() {
+        _activeError.value = false
         _loadingObservable.value = true
     }
 
