@@ -21,11 +21,11 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", '"https://api.foursquare.com/"')
+            buildConfigField("String", "BASE_URL", '"https://api.foursquare.com/"') // Do not change
             buildConfigField("String", "CLIENT_ID", '"Enter_Your_Client_ID"')
             buildConfigField("String", "CLIENT_SECRET", '"Enter_Your_Clinet_Secret"')
-            buildConfigField("Integer", "VERSION_PARAMETER", '20180323')
-            buildConfigField("Integer", "LIMIT_PARAMETER", '10')
+            buildConfigField("Integer", "VERSION_PARAMETER", '20180323') // Do not change
+            buildConfigField("Integer", "LIMIT_PARAMETER", '10') // The max value is 50
             buildConfigField("String", "QUERY_PARAMETER", '"coffee"')
 
         }
