@@ -106,4 +106,8 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espresso_version"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$rootProject.mockito_kotlin_version"
     testImplementation "androidx.arch.core:core-testing:2.1.0"
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines_version"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$rootProject.coroutines_version"
 }
