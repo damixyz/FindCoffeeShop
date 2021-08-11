@@ -28,9 +28,7 @@ class HomeViewModel
     }
 
     fun start() {
-        if ((_homeScreenState.value is HomeScreen.Content).not()) {
             _homeScreenState.value = null
-        }
     }
 
 }

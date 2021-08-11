@@ -50,7 +50,6 @@ class HomeFragment : Fragment() {
         homeViewModel.homeScreenState.observe(viewLifecycleOwner, { screenState ->
             when (screenState) {
                 is HomeScreen.LaunchVenues -> launchVenueFragment()
-                is HomeScreen.Content -> processContent(screenState)
                 is ScreenState.Empty -> processEmpty()
                 is ScreenState.Error -> processError(screenState)
             }
@@ -79,10 +78,6 @@ class HomeFragment : Fragment() {
         val action = HomeFragmentDirections.actionHomeFragmentToVenuesFragment()
         findNavController().navigateUp()
         findNavController().navigate(action)
-    }
-
-    private fun processContent(screenState: HomeScreen.Content) {
-        Timber.d("${screenState.payload}")
     }
 
     private fun processEmpty() {
