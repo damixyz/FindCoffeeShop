@@ -47,6 +47,9 @@ class VenuesFragment : Fragment() {
 
         createLocationRequest()
 
+        binding.btnRetry.setOnClickListener {
+            createLocationRequest()
+        }
 
         venuesViewModel.venueInfo.observe(viewLifecycleOwner, {
             processContent(it)
