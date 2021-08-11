@@ -33,10 +33,10 @@ class VenuesViewModel @Inject constructor(
     val activeError: LiveData<Boolean>
         get() = _activeError
 
-    fun getVenues() {
+    fun getVenues(latLng: String) {
         viewModelScope.launch {
             showLoading()
-            val result = useCase.execute()
+            val result = useCase.execute(latLng)
             processScreenState(result)
         }
     }

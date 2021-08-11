@@ -31,21 +31,6 @@ class VenuesFragment : Fragment() {
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
-    private var locationListener: LocationCallback = object : LocationCallback() {
-        override fun onLocationResult(locationResult: LocationResult?) {
-            locationResult ?: return
-            Timber.d(
-                "✅ ${
-
-                    locationResult.lastLocation
-                }"
-            )
-
-        }
-    }
-
-
-    @SuppressLint("MissingPermission")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -62,10 +47,6 @@ class VenuesFragment : Fragment() {
 
         createLocationRequest()
 
-        fusedLocationClient.lastLocation.addOnSuccessListener {
-            Timber.d("🚀 all system go ${it?.latitude} ${it?.longitude}")
-
-        }
 
         venuesViewModel.venueInfo.observe(viewLifecycleOwner, {
             processContent(it)
@@ -86,7 +67,8 @@ class VenuesFragment : Fragment() {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
         fusedLocationClient.lastLocation.addOnSuccessListener { location ->
             if (location != null) {
-                venuesViewModel.getVenues()
+                val latLng = "${location.latitude}, ${location.longitude}"
+                venuesViewModel.getVenues(latLng)
             }
         }
 

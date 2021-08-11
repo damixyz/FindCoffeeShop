@@ -10,8 +10,8 @@ class FourSquareRepositoryImp @Inject constructor(
     private val dataSource: RemoteDataSource,
     private val mapper: Mapper<Item, CoffeeShopInfo>
 ) : FourSquareRepository {
-    override suspend fun getCoffeeVenuesInfo(): List<CoffeeShopInfo> {
-        return dataSource.getCoffeeVenuesInfo().response.groups[0].let {
+    override suspend fun getCoffeeVenuesInfo(latLng: String): List<CoffeeShopInfo> {
+        return dataSource.getCoffeeVenuesInfo(latLng).response.groups[0].let {
             mapper.mapList(items = it.items)
         }
     }

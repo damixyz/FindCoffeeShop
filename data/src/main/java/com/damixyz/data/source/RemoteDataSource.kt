@@ -9,12 +9,11 @@ class RemoteDataSource @Inject constructor(
     private val service: FourSquareApi,
     private val fourSquareParams: FourSquareParams
 ) : DataSource {
-
-    override suspend fun getCoffeeVenuesInfo(): FourSquareResponse {
+    override suspend fun getCoffeeVenuesInfo(latLng: String): FourSquareResponse {
         return service.getCoffeeVenuesInfo(
             v = fourSquareParams.v,
             limit = fourSquareParams.limit,
-            ll = "51.290730, 1.047460",
+            ll = latLng,
             query = fourSquareParams.query
         )
     }

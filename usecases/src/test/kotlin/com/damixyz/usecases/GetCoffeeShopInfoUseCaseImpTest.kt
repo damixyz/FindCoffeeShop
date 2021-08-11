@@ -14,6 +14,7 @@ import org.junit.Test
 
 class GetCoffeeShopInfoUseCaseImpTest {
 
+    private val latlng = "0.0, 0.0"
     private val fourSquareRepository: FourSquareRepository = mock()
     private lateinit var getCoffeeShopInfoUseCase: GetCoffeeShopInfoUseCase
 
@@ -25,9 +26,9 @@ class GetCoffeeShopInfoUseCaseImpTest {
     @Test
     fun `attempts to retrieve Coffee Venues list`() {
         runBlockingTest {
-            given(fourSquareRepository.getCoffeeVenuesInfo()).willReturn(mock())
-            getCoffeeShopInfoUseCase.execute()
-            verify(fourSquareRepository).getCoffeeVenuesInfo()
+            given(fourSquareRepository.getCoffeeVenuesInfo(latlng)).willReturn(mock())
+            getCoffeeShopInfoUseCase.execute(latlng)
+            verify(fourSquareRepository).getCoffeeVenuesInfo(latlng)
         }
 
     }
@@ -36,9 +37,9 @@ class GetCoffeeShopInfoUseCaseImpTest {
     fun `empty screen state is dispatched when list is empty`() {
         val list: List<CoffeeShopInfo> = emptyList()
         runBlockingTest {
-            given(fourSquareRepository.getCoffeeVenuesInfo()).willReturn(list)
+            given(fourSquareRepository.getCoffeeVenuesInfo(latlng)).willReturn(list)
 
-            val actual = getCoffeeShopInfoUseCase.execute()
+            val actual = getCoffeeShopInfoUseCase.execute(latlng)
             assertEquals(ScreenState.Empty, actual)
         }
     }
@@ -54,10 +55,10 @@ class GetCoffeeShopInfoUseCaseImpTest {
             )
         )
         runBlockingTest {
-            given(fourSquareRepository.getCoffeeVenuesInfo())
+            given(fourSquareRepository.getCoffeeVenuesInfo(latlng))
                 .willReturn(list)
 
-            val actual = getCoffeeShopInfoUseCase.execute() as VenuesScreen.Content
+            val actual = getCoffeeShopInfoUseCase.execute(latlng) as VenuesScreen.Content
             assertEquals(list, actual.payload)
         }
     }
@@ -66,11 +67,11 @@ class GetCoffeeShopInfoUseCaseImpTest {
     fun `error screen state is dispatched when operation fails`() {
         val errorMessage = "Operation timed out"
         runBlockingTest {
-            given(fourSquareRepository.getCoffeeVenuesInfo())
+            given(fourSquareRepository.getCoffeeVenuesInfo(latlng))
                 .willAnswer {
                     throw Throwable(errorMessage)
                 }
-            val actual = getCoffeeShopInfoUseCase.execute() as ScreenState.Error
+            val actual = getCoffeeShopInfoUseCase.execute(latlng) as ScreenState.Error
 
             assertEquals(errorMessage, actual.errorMessages)
         }
