@@ -15,3 +15,6 @@ The project is this divided into different layers(modules).
 - Data: this defines the different dat sources
 
 # Suggested Improvements With Time and Scope
+1. Increased test coverage - unit tests for other repositories, usecases, viewmodels and instrumented tests for activities utilising espresso
+2. Implement a favorite venue screen
+3. Implement a google map functionality to display venue
