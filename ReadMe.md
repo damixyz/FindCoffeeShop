@@ -6,3 +6,12 @@
 5. Build and run the Application
 
 # Approach taken.
+I try to follow the **Clean Architecture** approach.
+The project is this divided into different layers(modules).
+
+- Presentation: layer that interacts with the Build
+- Use cases: the actions that the use can trigger
+- Domain: this are the business rules
+- Data: this defines the different dat sources
+
+# Suggested Improvements With Time and Scope
