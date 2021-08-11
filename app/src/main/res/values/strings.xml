@@ -3,4 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="retry">Retry</string>
+    <string name="query_param">Your Query Parameter is : %s</string>
+    <string name="limit_param">Your Limit Parameter is : %d</string>
+    <string name="version_param">Your Version Parameter is : %d</string>
+    <string name="client_secret">Your Client Secret is : %s</string>
+    <string name="client_id">Your Client Id is : %s</string>
 </resources>

@@ -43,6 +43,8 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding.lifecycleOwner = viewLifecycleOwner
+        binding.viewModel = homeViewModel
 
         homeViewModel.start()
         homeViewModel.homeScreenState.observe(viewLifecycleOwner, { screenState ->
@@ -69,8 +71,6 @@ class HomeFragment : Fragment() {
                 }
             }
         }
-
-        homeViewModel.getSavedVenues()
 
         return binding.root
     }
