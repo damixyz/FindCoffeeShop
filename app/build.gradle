@@ -22,6 +22,12 @@ android {
     buildTypes {
         debug {
             buildConfigField("String", "BASE_URL", '"https://api.foursquare.com/"')
+            buildConfigField("String", "CLIENT_ID", '"Enter_Your_Client_ID"')
+            buildConfigField("String", "CLIENT_SECRET", '"Enter_Your_Clinet_Secret"')
+            buildConfigField("Integer", "VERSION_PARAMETER", '20180323')
+            buildConfigField("Integer", "LIMIT_PARAMETER", '10')
+            buildConfigField("String", "QUERY_PARAMETER", '"coffee"')
+
         }
         release {
             minifyEnabled false
@@ -70,6 +76,8 @@ dependencies {
     // Hilt
     implementation "com.google.dagger:hilt-android:$rootProject.hilt_version"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
     kapt "com.google.dagger:hilt-compiler:$rootProject.hilt_version"
 
     // Timber
