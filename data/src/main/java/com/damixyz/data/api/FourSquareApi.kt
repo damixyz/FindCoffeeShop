@@ -13,3 +13,9 @@ interface FourSquareApi {
         @Query("query") query: String
     ): FourSquareResponse
 }
+
+data class FourSquareParams(
+    val v: Int,
+    val limit: Int,
+    val query: String
+)
