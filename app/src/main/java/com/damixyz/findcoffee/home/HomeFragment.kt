@@ -45,7 +45,7 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         homeViewModel.start()
-        homeViewModel.homeScreenState.observe(requireActivity(), { screenState ->
+        homeViewModel.homeScreenState.observe(viewLifecycleOwner, { screenState ->
             when (screenState) {
                 is HomeScreen.LaunchVenues -> launchVenueFragment()
                 is HomeScreen.Content -> processContent(screenState)
@@ -53,8 +53,6 @@ class HomeFragment : Fragment() {
                 is ScreenState.Error -> processError(screenState)
             }
         })
-
-
 
         binding.fab.setOnClickListener {
             when {
